@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemones 2020</title>
+    <style>
+        .caja1 {
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+            
+        }
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+        .pikachu , .charizard , .charmander , .bulbasaur , .mewtwo {
+            width: 1800px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: rgb(187, 185, 165);
+            padding: 50px;
+        }
+        .img {
+            width: 140px;
+            height: 140px;
+            object-fit: contain;
+        }
+        .infopika, .infochar, .infocharman, .infobul, .infomew {
+            font-size: 20px;
+            flex: 1;
+        }
+        .extraimg {
+            right: 40px;
+            top: 30px;
+            width: 400px; 
+            height: 400px; 
+            object-fit: contain;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="caja1">
+        <h1>Pokemones</h1>
+    </div>
+    <div class="caja2"></div>
+        <ul>
+            <li class="pikachu">
+                <h2>Pikachu</h2>
+                <img class="img" src="pikachu.png" alt="">
+                <ul class="infopika">
+                    <li><strong>Tipo:</strong>Eléctrico</li>
+                    <li><strong>Descripción:</strong>Pikachu es un Pokémon ratón de mejillasrojas que almacena electricidad. 
+                     Es ágil, curioso y muy leal a su entrenador. Cuando se emociona o se enfada, lanza potentes descargas eléctricas. 
+                     Es el Pokémon más emblemático de la franquicia.</li>
+                </ul>
+
+                <img class="extraimg" src="evopika.png" alt="">
+            </li>
+
+            <li class="charizard">
+                <h2>Charizard</h2>
+                <img class="img" src="Charizard.png" alt="">
+                <ul class="infochar">
+                    <li><strong>Tipo:</strong>Fuego/Volador</li>
+                    <Li><strong>Descripción:</strong> La evolución final de Charmander. Charizard es un poderoso dragón con alas que puede escupir fuego a más de 1.600 grados. Su temperamento es fuerte y no dudará en combatir enemigos que considere dignos.</Li>
+                </ul>
+
+                <img class="extraimg" src="evochar.png" alt="">
+                
+            </li>
+
+            <li class="charmander">
+                <h2>Charmander</h2>
+                <img class="img" src="charmander.png" alt="">
+                <ul class="infocharman"> 
+                    <li><strong>Tipo:</strong>Fuego</li>
+                    <li><strong>Descripción:</strong>Este pequeño Pokémon lagarto tiene una llama en la punta de su cola que refleja su estado emocional. Si está fuerte y feliz, arde con intensidad. Es valiente y tiene un espíritu de lucha desde que nace.</li>
+                </ul>
+                <img class="extraimg" src="evochar.png" alt="">
+                </li>
+
+            <li class="bulbasaur">
+                <h2>Bulbasaur</h2>
+                <img class="img" src="bulbasaur.png" alt="">
+                <ul class="infobul">
+                <li><strong>Tipo:</strong>Planta/Veneno</li>
+                <li><strong>Descripción:</strong> Con una semilla en su espalda desde que nace, Bulbasaur la usa para absorber energía solar. Es tranquilo, amigable y uno de los Pokémon iniciales más queridos. A medida que crece, la semilla florece.</li>
+                </ul>
+                <img class="extraimg" src="evobul.png" alt="">
+            </li>
+
+            <li class="mewtwo">
+                <h2>Mewtwo</h2>
+                <img class="img" src="mewtwo.png" alt="">
+                <ul class="infomew">
+                    <Li><strong>Tipo:</strong>Psíquico</Li>
+                    <li><strong>Descripción</strong>Un Pokémon creado genéticamente a partir del ADN de Mew. Mewtwo es uno de los más poderosos del mundo Pokémon, con habilidades psíquicas increíbles. Tiene una mente compleja y a menudo lucha con su propósito y existencia.</li>
+                </ul>
+                <img class="extraimg" src="evomew.png" alt="">
+            </li>
+    </ul>
+    <div class="caja3"></div>
+    <div class="caja4"></div>
+
+    <audio id="audio-pikachu" src="pikachu.mp3"></audio>
+    <audio id="audio-charizard" src="charizard.mp3"></audio>
+    <audio id="audio-charmander" src="Charmander.mp3"></audio>
+    <audio id="audio-bulbasaur" src="bulbasaur.mp3"></audio>
+    <audio id="audio-mewtwo" src="mewtwo.mp3"></audio>
+
+    <script>
+        document.querySelector('.pikachu .img').addEventListener('click', function(){
+            document.getElementById('audio-pikachu').play()
+        })
+
+        document.querySelector('.charizard .img').addEventListener('click', function(){
+            document.getElementById('audio-charizard').play()
+        })
+
+        document.querySelector('.charmander .img').addEventListener('click', function(){
+            document.getElementById('audio-charmander').play()
+        })
+
+        document.querySelector('.bulbasaur .img').addEventListener('click', function(){
+            document.getElementById('audio-bulbasaur').play()
+        })
+
+        document.querySelector('.mewtwo .img').addEventListener('click', function(){
+            document.getElementById('audio-mewtwo').play()
+        })
+    </script>
+</body>
+</html>
