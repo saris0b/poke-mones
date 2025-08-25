@@ -15,10 +15,11 @@
         }
         body {
             background-color: lightgoldenrodyellow;
+            font-family: Arial, sans-serif;
+    
         }
         .pikachu , .charizard , .charmander , .bulbasaur , .mewtwo {
-            width: 1800px;
-            height: 200px;
+            max-width: 100%;
             border: 2px solid black;
             margin: 20px auto;
             display: flex;
@@ -28,8 +29,8 @@
             padding: 50px;
         }
         .img {
-            width: 140px;
-            height: 140px;
+            width: 120px;
+            height: auto;
             object-fit: contain;
         }
         .infopika, .infochar, .infocharman, .infobul, .infomew {
@@ -42,6 +43,21 @@
             width: 400px; 
             height: 400px; 
             object-fit: contain;
+        }
+        @media (max-width:768px){
+            .pikachu, .charizard, .charmander, .bulbasaur, .mewtwo{
+                flex-direction: column;
+                text-align: center;
+            }
+            .extraimg {
+                width: 300px;
+                margin: 0 auto;
+            }
+            .infopika, .infochar, .infocharman, .infobul, .infomew {
+                font-size: 16px;
+            }
+                
+
         }
         
 
